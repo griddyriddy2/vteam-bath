@@ -1,0 +1,17 @@
+@import "tailwindcss";
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; }
+a, button { -webkit-tap-highlight-color: transparent; }
+:focus-visible { outline: 3px solid #E45656; outline-offset: 3px; }
+@media (prefers-reduced-motion: no-preference) {
+  .reveal-block { opacity: 1; transform: none; }
+  .reveal-block.is-visible { animation: vteam-enter .75s cubic-bezier(.16,1,.3,1) both; }
+  .reveal-block:nth-child(2n).is-visible { animation-delay: 90ms; }
+  .reveal-block:nth-child(3n).is-visible { animation-delay: 150ms; }
+  a, button { transition: color .25s ease, background-color .25s ease, box-shadow .3s ease, transform .3s ease; }
+  .group:hover { will-change: transform; }
+}
+@keyframes vteam-enter { from {opacity:.35;transform:translateY(26px) scale(.985)} to {opacity:1;transform:translateY(0) scale(1)} }
+@media (prefers-reduced-motion: reduce) { html {scroll-behavior:auto} *, *::before, *::after {animation-duration:.01ms!important;transition-duration:.01ms!important} }
