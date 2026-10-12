@@ -12,7 +12,6 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: { default: "V Team Bath | Your Community. Your Impact.", template: "%s | V Team Bath" },
   description,
-  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     locale: "en_GB",
