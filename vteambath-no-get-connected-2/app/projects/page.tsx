@@ -1,5 +1,12 @@
 import Link from "next/link";
 import { Suspense } from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Volunteering Projects",
+  description: "Explore 15 V Team Bath volunteering projects across nature, sustainability, wellbeing and education.",
+  alternates: { canonical: "/projects" },
+};
 import { ArrowLeft, ExternalLink, ArrowRight, Leaf, Recycle, Heart, Users, Mail } from "lucide-react";
 
 const categories = ["Nature", "Sustainability", "Wellbeing", "Education"] as const;
@@ -16,7 +23,7 @@ const projects: Project[] = [
     name: "V Parks", category: "Nature",
     summary: "Help local green spaces and community initiatives thrive.",
     partners: [
-      { name: "Belgrave Community Garden", description: "Support a volunteer-run garden growing organic food with rainwater harvesting, composting and solar power.", url: "https://tamworthbcag.co.uk/about-us/" },
+      { name: "Belgrave Community Garden", description: "Support a volunteer-run garden growing organic food with rainwater harvesting, composting and solar power.", url: undefined },
       { name: "Bath Area Play Project", description: "Support a local children's charity through fundraising, campaigning and volunteer engagement.", url: "https://www.bapp.org.uk/careers-volunteers/" },
     ],
   },
