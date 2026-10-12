@@ -1,7 +1,7 @@
 import { Instagram } from "lucide-react";
 import { LINKS } from "@/lib/links";
 
-const SU_LOGO = "https://www.thesubath.com/pageassets/volunteer/providers/login/y9jNfhKB_400x400.jpg";
+const SU_LOGO = "/su-logo.svg";
 const entries = [
   { label: "Our Society Webpage", sub: "Join our society!", href: LINKS.society, type: "su" },
   { label: "Instagram", sub: "Keep up to date here!", href: LINKS.instagram, type: "instagram" },
@@ -11,7 +11,7 @@ const entries = [
 export function SocialIcon({ type, small = false }: { type: "su" | "instagram" | "whatsapp"; small?: boolean }) {
   const size = small ? 28 : 38;
   if (type === "su") {
-    // Official SU Bath monogram, hosted on their own site rather than an approximation.
+    // SU mark based on the supplied artwork, hosted locally for reliability.
     return <img src={SU_LOGO} alt="" width={size} height={size} className="shrink-0 rounded-md object-cover" loading="lazy" />;
   }
   if (type === "instagram") return <span aria-hidden="true" className="inline-flex shrink-0 items-center justify-center" style={{width:size,height:size}}><Instagram size={small ? 25 : 31} strokeWidth={1.9} color="#C84465"/></span>;
