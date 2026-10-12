@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { Mail, ArrowUpRight, HandHeart, Handshake } from "lucide-react";
 
-export const metadata = { title: "Contact Us | V Team Bath", description: "Contact V Team about student volunteering and charity partnerships." };
+export const metadata = { title: "Contact Us", description: "Contact V Team about student volunteering and charity partnerships." };
 const studentMail = "mailto:vteam@bath.ac.uk?subject=Student%20Volunteering%20Enquiry";
 const partnerMail = "mailto:vteam@bath.ac.uk?subject=V%20Team%20Partnership%20Enquiry";
 export default function ContactPage(){return <main className="min-h-screen bg-[#FFFDFB] text-[#252525]">
