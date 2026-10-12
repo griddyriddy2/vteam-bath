@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { ArrowRight, HeartHandshake, Leaf, Recycle, Heart, GraduationCap, Users, CalendarDays } from "lucide-react";
 
-export const metadata = { title: "About Us", description: "Learn about V Team, student-led volunteering at the University of Bath." };
+export const metadata = { title: "About Us", description: "Learn about V Team, student-led volunteering at the University of Bath.", alternates: { canonical: "/about" } };
 
 const initiatives = [
   {name:"Nature",icon:Leaf,color:"#4D874F",bg:"#E4EEDB",text:"Help protect local green spaces, trees and wildlife."},
