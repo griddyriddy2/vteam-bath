@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { ArrowRight, Users, Megaphone, CalendarCheck, HeartHandshake, Mail } from "lucide-react";
 
-export const metadata = { title: "Become a Project Leader", description: "Find out how to lead a student volunteering project with V Team." };
+export const metadata = { title: "Become a Project Leader", description: "Find out how to lead a student volunteering project with V Team.", alternates: { canonical: "/project-leader" } };
 import { LINKS } from "@/lib/links";
 const formUrl = LINKS.leaderForm;
 const benefits = [
